@@ -1,7 +1,12 @@
+import { app, BrowserWindow, ipcMain } from "electron";
 import path from "path";
-import { app, BrowserWindow } from "electron";
 
 let mainWindow: BrowserWindow;
+
+ipcMain.on("test-channel", (event, data) => {
+    console.log(data);
+    event.reply("test-channel", `got message: ${data}`);
+});
 
 const isDevelopment = process.env.NODE_ENV === "development";
 
@@ -12,8 +17,11 @@ const createWindow = () => {
 
     mainWindow = new BrowserWindow({
         icon: path.join(assetPath, "icon.png"),
-        width: 1100,
-        height: 700
+        width: 1280,
+        height: 720,
+        webPreferences: {
+            preload: path.join(__dirname, "preload.js")
+        }
     });
 
     let htmlPath: string;

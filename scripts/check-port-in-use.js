@@ -1,4 +1,3 @@
-import chalk from "chalk";
 import detectPort from "detect-port";
 
 const port = process.env.PORT || "3000";

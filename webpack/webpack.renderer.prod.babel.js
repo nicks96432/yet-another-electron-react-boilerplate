@@ -1,10 +1,10 @@
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
 import CssMinimizerPlugin from "css-minimizer-webpack-plugin";
 import HtmlWebpackPlugin from "html-webpack-plugin";
-import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 import path from "path";
 import TerserWebpackPlugin from "terser-webpack-plugin";
+import { BundleAnalyzerPlugin } from "webpack-bundle-analyzer";
 import { merge } from "webpack-merge";
 import baseConfig from "./webpack.base";
 
@@ -27,11 +27,7 @@ export default merge(baseConfig, {
     },
 
     plugins: [
-        new BundleAnalyzerPlugin({
-            analyzerMode: "static",
-            reportFileName: path.resolve(__dirname, "../report.html"),
-            openAnalyzer: false
-        }),
+        new BundleAnalyzerPlugin({ analyzerMode: "static" }),
 
         new CleanWebpackPlugin(),
 

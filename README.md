@@ -1,6 +1,8 @@
 # yet-another-electron-react-boilerplate
 
-electron + react + typescript + scss + webpack + jest boilerplate from scratch, extended from [yet-another-react-boilerplate](https://github.com/nicks96432/yet-another-react-boilerplate)
+Electron + React + Typescript + SCSS + Webpack + Jest boilerplate, extended from [yet-another-react-boilerplate](https://github.com/nicks96432/yet-another-react-boilerplate).
+
+Inspired by [electron-react-boilerplate](https://github.com/electron-react-boilerplate/electron-react-boilerplate/).
 
 ## Quick start
 
@@ -9,3 +11,7 @@ electron + react + typescript + scss + webpack + jest boilerplate from scratch, 
 3. Run `npm install` or `yarn` to install dependencies.
 4. Run `npm start` or `yarn start` to start.
 5. Run `npm run dist` or `yarn dist` to build executable.
+
+## License
+
+Lisenced under [MIT](./LICENSE).

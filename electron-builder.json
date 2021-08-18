@@ -1,0 +1,29 @@
+{
+    "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+    "appId": "org.nicks96432.electronApp",
+    "asar": true,
+    "directories": {
+        "buildResources": "assets"
+    },
+    "files": [
+        "build",
+        "!node_modules"
+    ],
+    "linux": {
+        "category": "Development",
+        "target": [
+            "AppImage"
+        ]
+    },
+    "nsis": {
+        "allowToChangeInstallationDirectory": true,
+        "oneClick": false
+    },
+    "productName": "electron-app",
+    "win": {
+        "target": [
+            "nsis"
+        ]
+    },
+    "publish": null
+}

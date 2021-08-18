@@ -17,11 +17,6 @@ export default merge(common, {
     module: {
         rules: [
             {
-                test: /\.[jt]sx?$/,
-                exclude: /node_modules/,
-                use: ["babel-loader"]
-            },
-            {
                 test: /\.css$/,
                 use: [
                     "style-loader",

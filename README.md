@@ -11,6 +11,7 @@ Inspired by [electron-react-boilerplate](https://github.com/electron-react-boile
 3. Run `npm install` or `yarn` to install dependencies.
 4. Run `npm start` or `yarn start` to start.
 5. Run `npm run dist` or `yarn dist` to build executable.
+6. Run `npm run clean` or `yarn clean` to clean build.
 
 ## License
 

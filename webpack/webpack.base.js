@@ -15,7 +15,7 @@ export default {
                 exclude: /node_modules/
             },
             {
-                test: /\.(?:ico|gif|png|jpe?g|svg|webp|woff2?|otf|ttf|eot)$/,
+                test: /\.(jpe?g|png|gif|web[mp]|svg|eot|[ot]tf|woff2?|wav|mp[34]|m4a|aac|oga)$/,
                 type: "asset"
             }
         ]
